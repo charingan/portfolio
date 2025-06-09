@@ -84,38 +84,14 @@ $padding: 20px;
   }
 
   .nav {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    position: absolute;
-    top: 60px;  // Adjust the space below the header
-    right: 20px;
-    background-color: $primary-bg-color;
-    padding: 20px;
-    border-radius: 8px;
-    width: 200px; // Set fixed width for the mobile menu
-    opacity: 0; // Initially hidden
-    pointer-events: none; // Prevent interaction when hidden
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-
-    &.active {
-      display: flex;
-      opacity: 1;
-      pointer-events: auto; // Enable interaction when visible
-    }
-
-    a {
-      color: $secondary-color;
-      padding: 10px 15px;
-      text-decoration: none;
-      width: 100%;
-      text-align: left;
-
-      &:hover {
-        background-color: $hover-bg-color;
-        border-radius: 4px;
-      }
-    }
+    margin: 0 auto;
   }
+}
 
+
+@media (max-width:600px)
+{
+  .nav{
+    display: none !important;
+  }
 }

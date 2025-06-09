@@ -42,7 +42,7 @@ $font-size-lg : 3rem;
     }
 
 
-    .front-end , .back-end , .blender{
+    .front-end , .back-end , .game-dev{
         // border: 1px black solid;
         // border-radius: .3rem;
         padding: 2rem;
@@ -60,6 +60,7 @@ $font-size-lg : 3rem;
             .tool {
                 margin-bottom: 2rem;
                 padding: 1rem;
+                align-self: center;
                 span {
                     font-size: .7rem;
                 }
@@ -81,6 +82,17 @@ $font-size-lg : 3rem;
                 }
             }
         }
+        @media (max-width:800px)
+        {
+            .tools{
+                display: grid;
+                grid-template-columns: repeat(2 , 1fr);
+            }
+
+            h3{
+                font-size: 1.2rem;
+            }
+        }
     }
 }
 
@@ -89,5 +101,12 @@ $font-size-lg : 3rem;
 {
     mat-divider{
         display: none;
+    }
+}
+
+@media (max-width:800px)
+{
+    .skills-title{
+        margin-top: 6rem;
     }
 }

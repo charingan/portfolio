@@ -38,15 +38,10 @@ $font-size-lg : 3rem;
         height: 100%;
         align-items: center;
         justify-content: center;
-        border: 1px;
-        border-right: none;
-        border-color: black;
-        border-style: solid;
-        border-radius: .3rem 0rem 0rem .3rem;
+        border-radius: .3rem;
+        border: 1px black solid;
         height: 69.70%;
         width: 40%;
-        min-width: 500px;
-
         form {
             display: flex;
             flex-direction: column;
@@ -114,5 +109,23 @@ $font-size-lg : 3rem;
         img {
             display: none;
         }
+        .contact-form{
+            width: 60%;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .contact-form{
+            width: 80%;
+            border: 0px;
+        }
+    }
+}
+
+@media (max-width:800px)
+{
+    .contact-title{
+        margin-top: 6rem;
+        margin-bottom: 3rem;
     }
 }

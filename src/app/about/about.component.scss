@@ -108,3 +108,11 @@ $font-size-lg : 3rem;
         padding: 4rem;
     }
 }
+
+@media (max-width:800px)
+{
+    .about-title{
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+    }
+}
