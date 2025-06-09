@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+
+$primary-color : black;
+$secondary-color : white;
+$padding : 20px;
+$margin : 20px;
+$gap : 50px;
+$font-size : 1.4rem;
+$font-size-lg : 3rem;
+
+
+
+.about-title{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        font-size: $font-size-lg;
+        font-family: "Silkscreen", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+
+.about {
+    height: 90vh;
+    box-sizing: border-box;
+    min-height: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .about-content {
+        font-size: $font-size;
+        display: flex;
+        justify-content: center;
+        // gap: $gap;
+        .text-content {
+            // flex: 1;
+            max-width: 40%;
+            align-self: center;
+            .text {
+                strong {
+                    font-family: "Silkscreen", serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+            }
+
+
+            .exp-edu{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 3rem;
+                gap: $gap;
+                width: 100%;
+                font-size: 1rem;
+
+                .experience , .education {
+                    // border: 1px black solid;
+                    background-color: rgb(252, 249, 249);
+                    flex: 1;
+                    padding: 7px;
+                    p , h3 {
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    h3{
+                        margin: 7px 0px;
+                        font-family: "Silkscreen", serif;
+                        font-weight: 400;
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+
+        .image {
+            display: flex;
+            max-width: 50%;
+            align-items: center;
+            justify-content: center;
+            img {
+                max-width: 70%;
+                height: auto;
+                border-radius: .6rem;
+            }
+        }
+    }
+}
+
+
+@media (max-width:1200px)
+{
+    img{
+        display: none;
+    }
+
+    .text-content{
+        // width: auto;
+        min-width: fit-content;
+        padding: 4rem;
+    }
+}

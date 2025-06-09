@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+$primary-color : black;
+$secondary-color : white;
+$padding : 20px;
+$margin : 20px;
+$gap : 50px;
+$font-size : 1.4rem;
+$font-size-lg : 3rem;
+
+
+
+
+.contact-title{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        font-size: $font-size-lg;
+        font-family: "Silkscreen", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.contact{
+    height: 90vh;
+    box-sizing: border-box;
+    min-height: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contact-form {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        border: 1px;
+        border-right: none;
+        border-color: black;
+        border-style: solid;
+        border-radius: .3rem 0rem 0rem .3rem;
+        height: 69.70%;
+        width: 40%;
+        min-width: 500px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+
+            mat-label {
+                color: $primary-color;
+                font-family: "Silkscreen", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            mat-form-field{
+                margin-bottom: $margin;
+                width: 100%;
+            }
+
+            button {
+
+                &::content{
+                    font-family: "Silkscreen", serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 1rem;
+                }
+
+                color: $primary-color;
+                width: 100%;
+                background-color: transparent;
+                border: 1px black solid;
+                border-radius: .2rem;
+                align-self: flex-end;
+                transition: all .3s ease;
+
+                &:hover {
+                    background-color: $primary-color;
+                    color: $secondary-color;
+                    transition: all .3s ease;
+                }
+                &:disabled {
+                    color: cadetblue;
+                    border: none;
+                    background-color: rgb(230, 218, 218);
+                    transition: all .3s ease;
+                }
+            }
+
+        }
+    }
+
+    img {
+        width: 25%;
+        height: 70%;
+        object-fit: cover;
+        border-radius: 0rem .2rem .2rem 0rem;
+    }
+
+    @media (max-width: 1300px) {
+        .contact-form{
+            border: 1px black solid;
+            border-radius: .3rem;
+        }
+        img {
+            display: none;
+        }
+    }
+}

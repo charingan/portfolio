@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+
+$primary-color : black;
+$secondary-color : white;
+$padding : 20px;
+$margin : 20px;
+$gap : 50px;
+$font-size : 1.6rem;
+$font-size-lg : 3rem;
+
+
+.project-title{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        font-size: $font-size-lg;
+        font-family: "Silkscreen", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+
+
+.project{
+    height: 90vh;
+    box-sizing: border-box;
+    min-height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: $gap;
+    flex-wrap: wrap;
+
+    .example-card {
+        max-width: 400px;
+        background-color: $secondary-color;
+        width: 100%;
+        a{
+            text-decoration: none;
+            color: black;
+            transition: all .3s ease;
+            border: 1px black solid;
+            border-radius: .2rem;
+            padding: .3rem;
+        }
+    }
+
+
+    mat-card-actions {
+        margin: $margin 0;
+        display: flex;
+        justify-content: center;
+        gap: $gap;
+        a {
+            color: $primary-color;
+            background-color: $secondary-color; 
+            transition: all .3s ease;
+            border: 1px black solid;
+            border-radius: 0;
+            &:hover {
+                color: $secondary-color;
+                background-color: $primary-color;
+                border-radius: .2rem;
+                transition: all .3s ease;
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+   
+}
+
+
+@media (max-width:1350)
+{
+    .project{
+
+    }
+}

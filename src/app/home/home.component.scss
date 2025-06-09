@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+
+$primary-color : black;
+$secondary-color : white;
+$font-size : 2rem;
+$font-size-lg : 3rem;
+$padding : 20px;
+$gap : 50px;
+
+
+
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: calc(100vh - 22vh);
+    box-sizing: border-box;
+    min-height: fit-content;
+    gap: $gap;
+    margin: 0;
+    .home-text {
+        max-height: fit-content;
+        align-self: center;
+        text-align: center;
+
+        .socials {
+            margin-top: $padding;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            gap: $gap;
+            a {
+                width: fit-content;
+                height: fit-content;
+                align-self: center;
+                color: $primary-color;
+                background-color: $secondary-color;
+                cursor: pointer;
+                i{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        p {
+            font-size: $font-size;
+        }
+        .fe-dev{
+            font-size: 2.4rem;
+        }
+        h1{
+            font-size: $font-size-lg;
+            font-family: "Silkscreen", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .CV {
+            display: flex;
+            justify-content: center;
+            gap: $gap;
+            .d-cv {
+                background-color: $secondary-color;
+                color: $primary-color;
+                transition: all .3s ease;
+                &:hover{
+                    background-color: $primary-color;
+                    color: $secondary-color;
+                    transition: all .3s ease;
+                }
+                i {
+                    font-size: 1rem;
+                }
+            }
+
+            .contact-info{
+                color: $secondary-color;
+                background-color: $primary-color;
+                transition: all .3s ease;
+                &:hover{
+                    color: $primary-color;
+                    background-color: $secondary-color;
+                    transition: all .3s ease;
+                }
+                i {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .home-image-container {
+        display: flex;
+        width: 400px;
+        height: 400px;
+        align-self: center;
+        
+
+        img {
+            border-radius: 50%;
+        }
+    }
+}
