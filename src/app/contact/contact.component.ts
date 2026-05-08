@@ -44,10 +44,10 @@ export class ContactComponent implements OnInit{
       e.preventDefault();
 
     emailjs.send(
-        'service_zulvktn', // Replace with your EmailJS service ID
-        'template_ok5aqcf', // Replace with your EmailJS template ID
+        'service_zulvktn',
+        'template_ok5aqcf',
         form,
-        'vcj2DRc_AJMiruYv4' // Replace with your EmailJS public key
+        'vcj2DRc_AJMiruYv4'
       )
       .then(
         (result: EmailJSResponseStatus) => {
