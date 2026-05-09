@@ -10,11 +10,12 @@ $font-size : 1.6rem;
 $font-size-lg : 3rem;
 
 
-.project-title{
+.project-title {
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
     h2 {
         font-size: $font-size-lg;
         font-family: "Silkscreen", serif;
@@ -25,13 +26,13 @@ $font-size-lg : 3rem;
 
 
 
-.project{
+.project {
     height: 90vh;
     box-sizing: border-box;
     min-height: fit-content;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch; // changed from center
     text-align: center;
     gap: $gap;
     flex-wrap: wrap;
@@ -41,12 +42,13 @@ $font-size-lg : 3rem;
         background-color: $secondary-color;
         width: 100%;
         padding: 1rem;
-        a{
+        display: flex; // add this
+        flex-direction: column; // add this
+
+        a {
             text-decoration: none;
             color: black;
             transition: all .3s ease;
-            // border: 1px black solid;
-            // border-radius: 2rem;
             padding: .6rem;
         }
     }
@@ -57,40 +59,40 @@ $font-size-lg : 3rem;
         display: flex;
         justify-content: center;
         gap: $gap;
+
         a {
             color: $primary-color;
-            background-color: $secondary-color; 
+            background-color: $secondary-color;
             transition: all .3s ease;
             border-radius: .2rem;
+
             &:hover {
                 color: $secondary-color;
                 background-color: $primary-color;
                 border-radius: .2rem;
                 transition: all .3s ease;
-                a{
+
+                a {
                     color: white;
                 }
             }
         }
     }
-   
+
 }
 
 
-@media (max-width:1350)
-{
-    .project{
-
-    }
+@media (max-width:1350) {
+    .project {}
 }
 
-@media (max-width:800px)
-{
-    .project-title{
+@media (max-width:800px) {
+    .project-title {
         margin-top: 6rem;
         margin-bottom: 3rem;
     }
-    .project{
+
+    .project {
         padding: 1rem;
     }
 }
