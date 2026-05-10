@@ -32,10 +32,12 @@ $font-size-lg : 3rem;
     min-height: fit-content;
     display: flex;
     justify-content: center;
-    align-items: stretch; // changed from center
+    align-items: stretch; 
     text-align: center;
     gap: $gap;
     flex-wrap: wrap;
+    margin: 5rem 0;
+
 
     .example-card {
         max-width: 400px;
@@ -43,7 +45,7 @@ $font-size-lg : 3rem;
         width: 100%;
         padding: 1rem;
         display: flex; // add this
-        flex-direction: column; // add this
+        flex-direction: column; 
 
         a {
             text-decoration: none;
